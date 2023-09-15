@@ -1,0 +1,510 @@
+.write {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+  position: relative;
+}
+
+.writeImg {
+  width: 550px;
+  height: 300px;
+  margin: 15px;
+  text-align: center;
+  font-size: 35px;
+  background-color: rgb(208, 208, 208, 0.7);
+  padding: 10px;
+  border-radius: 15px;
+  color: rgb(119, 119, 119);
+  box-shadow: 5px 5px 10px 1px gray;
+  position: relative;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.writeImg img {
+  width: 95%;
+  height: 300px;
+  background-size: 100% 100%;
+  border-radius: 15px;
+}
+
+.writeForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.writeFormGroup {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.writeFormGroup input ~ ::placeholder {
+  color: rgb(83, 83, 83);
+}
+.writeFormGroup textarea::-moz-placeholder {
+  color: rgb(83, 83, 83);
+}
+.writeFormGroup input {
+  background-color: hsla(32, 85%, 89%, 0.9);
+  border-radius: 15px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px 1px rgb(98, 90, 74);
+}
+.writeFormGroup textarea {
+  background-color: hsla(32, 85%, 89%, 0.9);
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px 1px rgb(98, 90, 74);
+  margin-bottom: 20px;
+}
+
+#addPhotoIcon {
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  border-radius: 50%;
+  color: rgb(118, 118, 118);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  right: 45px;
+  background-color: wheat;
+  margin: auto 0;
+  transition: 0.5s;
+}
+#addPhotoIcon:hover {
+  color: #454545;
+}
+#deletePhotoIcon {
+  width: 35px;
+  height: 35px;
+  font-size: 23px;
+  border-radius: 50%;
+  color: rgb(115, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: wheat;
+  font-weight: 800;
+  transition: 0.5s;
+}
+#deletePhotoIcon:hover {
+  color: rgb(180, 0, 0);
+}
+.writeInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+  margin-top: 5px;
+}
+
+.writeInput::placeholder {
+  font-weight: 400;
+}
+
+.writeInput:focus {
+  outline-style: none;
+}
+
+.writeText {
+  width: 70vw;
+  height: 100vh;
+  font-family: inherit;
+  font-size: 20px;
+}
+
+.writeSubmit {
+  position: absolute;
+  color: white;
+  background-color: teal;
+  box-shadow: 2px 2px 5px gray;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  right: 10px;
+  top: 24px;
+}
+.writeSubmit:hover {
+  background-color: rgb(0, 100, 100);
+}
+.alertLabel {
+  font-size: 24px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  word-spacing: 2px;
+}
+.alertButton {
+  padding: 10px 35px;
+  font-size: 20px;
+  transition: 0.3s;
+  background-color: rgb(99, 99, 99);
+  color: aliceblue;
+  border-radius: 10px;
+}
+.alertButton:hover {
+  padding: 10px 45px;
+  color: rgb(132, 132, 132);
+  background-color: bisque;
+}
+.active {
+  display: block;
+  position: absolute;
+  position: fixed;
+  top: 50px;
+  background-color: rgba(112, 112, 112, 0.499);
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+.unactive {
+  display: none;
+}
+.alert {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #cacaca;
+  border-radius: 10px;
+  padding: 16px;
+  position: absolute;
+  top: 250px;
+  left: calc(50% - 201px);
+  animation: alert 0.6s linear;
+  border: 4px outset rgb(218, 218, 218);
+}
+.addCategory {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+.Categoty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  position: relative;
+  width: 70vw;
+  align-self: center;
+}
+.Categoty input {
+  background-color: hsla(32, 85%, 89%, 0.9);
+  border-radius: 2px 0 0 2px;
+  height: 50px;
+  border: none;
+  padding: 0;
+  width: 80%;
+  text-indent: 8px;
+  border: 2px outset #cccccc;
+  border-right: none;
+  outline: none;
+  font-size: large;
+}
+.Categoty input::placeholder {
+  font-size: 16px;
+  margin-right: -10px;
+  font-family: "Quicksand", sans-serif;
+}
+.addCatIcon {
+  font-size: 30px;
+  color: rgb(75, 75, 75);
+}
+.iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 20%;
+  background-color: rgb(196, 196, 196);
+  padding: 0;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  border: 2px outset #cccccc;
+}
+
+.addCatIcon:hover {
+  color: rgb(71, 71, 71);
+}
+
+.catDisplay {
+  width: 70%;
+  background-color: rgba(216, 216, 216, 0.803);
+  border-radius: 10px 2px 2px 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-right: 5px;
+  border: 2px outset #cccccc;
+  font-family: "Oswald", sans-serif;
+}
+
+.singleCat {
+  margin-right: 15px;
+  font-size: 23px;
+  color: #575757;
+  cursor: pointer;
+}
+.singleCat:hover {
+  color: #686868;
+}
+.err {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  font-size: 19px;
+  color: rgb(163, 11, 3);
+  align-items: center;
+  justify-content: center;
+  font-family: "Lora", serif;
+  background-color: rgba(182, 137, 137, 0.353);
+  border-radius: 10px;
+  align-self: center;
+}
+
+.loadingOn {
+  border: 3px solid wheat;
+  border-top: 3px solid rgb(245, 183, 69);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 0.5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loadingOff {
+  display: none;
+}
+.fetchErr {
+  font-size: 28px;
+  padding-bottom: 15px;
+  color: rgb(203, 231, 255);
+  font-family: "Belanosima", sans-serif;
+  text-shadow: 0 4px 3px rgb(0, 0, 0);
+}
+@media only screen and (max-width: 550px) {
+  .writeImg {
+    width: 300px;
+    height: 200px;
+  }
+  .writeImg img {
+    height: 180px;
+  }
+  #addPhotoIcon {
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    right: 30px;
+  }
+  #deletePhotoIcon {
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+  }
+  .catDisplay {
+    height: 25px;
+  }
+  .addCategory input {
+    height: 25px;
+    font-size: 11px;
+  }
+  .addCategory input::placeholder {
+    font-size: 9px;
+  }
+  .iconBox {
+    height: 25px;
+  }
+  .addCatIcon {
+    font-size: 15px;
+  }
+  .writeInput {
+    padding: 13px;
+    font-size: 13px;
+    border-radius: 10px !important;
+  }
+  .writeSubmit {
+    font-size: 11px;
+    top: 12px;
+    padding: 6px;
+    border-radius: 5px;
+  }
+  .singleCat {
+    font-size: 13px;
+  }
+  .err {
+    font-size: 14px;
+    padding: 4px;
+  }
+  .fetchErr {
+    font-size: 18px;
+  }
+  .loadingOn {
+    border: 2px solid wheat;
+    border-top: 2px solid rgb(245, 183, 69);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    top: 5px;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 850px) {
+  .writeImg {
+    width: 380px;
+    height: 240px;
+  }
+  .writeImg img {
+    height: 230px;
+  }
+  #addPhotoIcon {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    right: 40px;
+  }
+  #deletePhotoIcon {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .catDisplay {
+    height: 40px;
+  }
+  .addCategory input {
+    height: 40px;
+  }
+  .addCategory input::placeholder {
+    font-size: 14px;
+  }
+  .iconBox {
+    height: 40px;
+  }
+  .addCatIcon {
+    font-size: 20px;
+  }
+  .writeInput {
+    padding: 15px;
+    font-size: 16px;
+  }
+  .writeSubmit {
+    font-size: 11px;
+    top: 15px;
+    padding: 8px;
+  }
+  .singleCat {
+    font-size: 18px;
+  }
+  .err {
+    font-size: 14px;
+    padding: 4px;
+  }
+  .fetchErr {
+    font-size: 18px;
+  }
+  .loadingOn {
+    border: 2px solid wheat;
+    border-top: 2px solid rgb(245, 183, 69);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    top: 5px;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1150px) {
+  .writeImg {
+    width: 400px;
+    height: 260px;
+  }
+  .writeImg img {
+    height: 250px;
+  }
+  #addPhotoIcon {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    right: 40px;
+  }
+  #deletePhotoIcon {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .catDisplay {
+    height: 40px;
+  }
+  .addCategory input {
+    height: 40px;
+    font-size: 13px;
+  }
+  .iconBox {
+    height: 40px;
+  }
+  .addCatIcon {
+    font-size: 25px;
+  }
+  .writeInput {
+    padding: 15px;
+    font-size: 20px;
+  }
+  .writeSubmit {
+    font-size: 13px;
+    top: 14px;
+  }
+  .singleCat {
+    font-size: 18px;
+  }
+  .err {
+    font-size: 18px;
+    padding: 9px;
+  }
+  .fetchErr {
+    font-size: 23px;
+  }
+  .loadingOn {
+    border: 2px solid wheat;
+    border-top: 2px solid rgb(245, 183, 69);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    top: 5px;
+  }
+}
+
+@media only screen and (min-width: 1151px) and (max-width: 1350px) {
+}
+
+@media only screen and (min-width: 1351px) {
+}

@@ -1,0 +1,7 @@
+.home {
+  display: flex;
+  background: url("../../assist/images/home.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  flex-wrap: wrap;
+}

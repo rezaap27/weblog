@@ -1,0 +1,510 @@
+.settings {
+  display: flex;
+  background-color: antiquewhite;
+  flex-wrap: wrap;
+}
+
+.settingsWrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+.settingsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingsTitleUpdate {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: rgb(255, 184, 51);
+  text-shadow: 1px 1px 1px black;
+}
+
+.settingsTitleDelete {
+  align-self: center;
+  width: 180px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(128, 13, 0);
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 16px;
+  box-shadow: 1px 1px 5px gray;
+  font-family: "Varela Round", sans-serif;
+  transition: 0.4s;
+}
+.settingsSubmitButton {
+  align-self: center;
+  width: 180px;
+  border: none;
+  border-radius: 10px;
+  color: rgb(58, 58, 58);
+  background-color: burlywood;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  font-size: 16px;
+  box-shadow: 1px 1px 5px gray;
+  font-family: "Varela Round", sans-serif;
+  transition: 0.4s;
+}
+.settingsTitleDelete:hover {
+  background-color: rgb(85, 4, 4);
+}
+
+.settingsForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.settingsPP {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.settingsPP > img {
+  height: 70px;
+  width: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+#settingsPPIcon {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  color: white;
+  background-color: teal;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(255, 210, 127);
+}
+
+.settingsPPButton:focus {
+  outline-style: none;
+}
+
+.settingsForm > label {
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: "Belanosima", sans-serif;
+}
+.label {
+  font-family: "Belanosima", sans-serif;
+  font-size: 18px;
+  color: #292929;
+}
+.settingsPPInput {
+  width: 30%;
+}
+
+.settingsInput {
+  color: gray;
+  padding: 10px 0 10px 0;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  background-color: antiquewhite;
+  outline: none;
+  overflow: visible;
+}
+.settingsInput::-moz-placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 12px;
+}
+
+.settingsSubmitButton:hover {
+  background-color: rgb(219, 173, 114);
+}
+.err {
+  color: rgb(192, 0, 0);
+  font-size: 15px;
+  padding: 5px 0 20px 0;
+}
+.alertLabel {
+  font-size: 39px;
+  font-family: "lara";
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.alertButtons {
+  width: 85px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  transition: 0.1s linear;
+  font-family: "lara";
+}
+.alert {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #292929;
+  border-radius: 15px;
+  padding: 16px;
+  position: absolute;
+  top: 250px;
+  left: calc(50% - 201px);
+  animation: alert 0.6s linear;
+}
+@keyframes alert {
+  25% {
+    padding: 32px;
+    top: 234px;
+    left: calc(50% - 217px);
+  }
+  50% {
+    padding: 16px;
+    top: 250px;
+    left: calc(50% - 201px);
+    background-color: rgb(174, 12, 12);
+  }
+  75% {
+    padding: 32px;
+    top: 234px;
+    left: calc(50% - 217px);
+  }
+  100% {
+    padding: 16px;
+    top: 250px;
+    left: calc(50% - 201px);
+    background-color: #292929;
+  }
+}
+.buttons {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.yes:hover {
+  background-color: rgb(176, 255, 176);
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+.no:hover {
+  background-color: rgb(255, 174, 174);
+  color: black;
+  font-size: 30px;
+}
+.active {
+  display: block;
+  position: relative;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: hsl(0, 0%, 40%, 0.8);
+}
+.unactive {
+  display: none;
+}
+.passCheckFalse {
+  height: 0px;
+}
+.userCheckFalse {
+  height: 0px;
+}
+.userCheckTrue {
+  height: 100px;
+}
+.passCheckTrue {
+  height: 220px;
+}
+#passDisplay {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  padding-top: 15px;
+  transition: 1s;
+  overflow: hidden;
+  border-top: 1px dotted rgb(176, 176, 176);
+}
+#userDisplay {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  padding-top: 15px;
+  transition: 1s;
+  overflow: hidden;
+  border-top: 1px dotted rgb(176, 176, 176);
+}
+
+.CheckTittle {
+  font-size: 26px;
+  margin-top: 10px;
+  min-width: 30%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: left;
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  color: rgb(96, 96, 96);
+}
+.checkIcon {
+  font-size: 34px;
+  color: gray;
+  cursor: pointer;
+  transition: linear 0.6s;
+  position: absolute;
+  left: 230px;
+  bottom: -2px;
+  width: 45px;
+  height: 45px;
+  margin-bottom: -5px;
+}
+.changeBox {
+  margin-top: 50px;
+}
+.after {
+  transform: rotate(90deg);
+  color: rgb(86, 86, 86);
+}
+.loadingOn {
+  border: 3px solid rgb(67, 67, 67); /* Light grey */
+  border-top: 3px solid rgb(1, 1, 1); /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 0.5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loadingOff {
+  display: none;
+}
+.fetchErr {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: rgb(191, 11, 11);
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  border-radius: 10px;
+  align-self: center;
+  min-width: 50%;
+  padding: 6px 14px;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 1px 1px 4px gray;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 550px) {
+  .settingsTitle {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fetchErr {
+    width: 100%;
+    font-size: 20px;
+  }
+  .settingsTitleDelete {
+    font-size: 13px;
+    width: 130px;
+  }
+  .settingsSubmitButton {
+    font-size: 13px;
+    width: 130px;
+  }
+  .settingsPP img {
+    width: 65px;
+    height: 65px;
+  }
+  #settingsPPIcon {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+  .CheckTittle {
+    font-size: 20px;
+  }
+  .checkIcon {
+    width: 35px;
+    height: 35px;
+    left: 180px;
+    bottom: -1px;
+  }
+  .settingsTitleUpdate {
+    font-size: 24px;
+  }
+  .settingsForm > label {
+    font-size: 16px;
+  }
+  .alertLabel {
+    font-size: 30px;
+  }
+  .alertButtons {
+    width: 65px;
+    height: 35px;
+    font-size: 18px;
+  }
+  .alertButtons:hover {
+    font-size: 25px;
+  }
+  .alert {
+    width: 250px;
+    padding: 15px;
+    height: 130px;
+    left: calc(50% - 140px);
+    top: 250px;
+  }
+  @keyframes alert {
+    25% {
+      padding: 30px;
+      left: calc(50% - 155px);
+      top: 235px;
+    }
+    50% {
+      padding: 15px;
+      left: calc(50% - 140px);
+      top: 250px;
+      background-color: rgb(174, 12, 12);
+    }
+    75% {
+      padding: 30px;
+      left: calc(50% - 155px);
+      top: 235px;
+    }
+    100% {
+      padding: 15px;
+      left: calc(50% - 140px);
+      top: 250px;
+      background-color: #292929;
+    }
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 850px) {
+  .fetchErr {
+    width: 80%;
+    font-size: 23px;
+  }
+  .settingsTitleDelete {
+    font-size: 12px;
+    width: 130px;
+  }
+  .settingsSubmitButton {
+    font-size: 12px;
+    width: 130px;
+  }
+  .settingsPP img {
+    width: 55px;
+    height: 55px;
+  }
+  #settingsPPIcon {
+    width: 19px;
+    height: 19px;
+    font-size: 14px;
+  }
+  .CheckTittle {
+    font-size: 20px;
+  }
+  .checkIcon {
+    width: 35px;
+    height: 35px;
+    left: 180px;
+    bottom: 1px;
+  }
+  .settingsTitleUpdate {
+    font-size: 24px;
+  }
+  .settingsForm > label {
+    font-size: 16px;
+  }
+  .alertLabel {
+    font-size: 30px;
+  }
+  .alertButtons {
+    width: 65px;
+    height: 35px;
+    font-size: 18px;
+  }
+  .alertButtons:hover {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1150px) {
+  .fetchErr {
+    width: 80%;
+    font-size: 23px;
+  }
+  .settingsTitleDelete {
+    font-size: 14px;
+    width: 160px;
+  }
+  .settingsSubmitButton {
+    font-size: 14px;
+    width: 160px;
+  }
+  .settingsPP img {
+    width: 65px;
+    height: 65px;
+  }
+  #settingsPPIcon {
+    width: 22px;
+    height: 22px;
+    font-size: 17px;
+  }
+  .CheckTittle {
+    font-size: 23px;
+  }
+  .checkIcon {
+    width: 43px;
+    height: 43px;
+    left: 210px;
+  }
+  .settingsTitleUpdate {
+    font-size: 28px;
+  }
+  .settingsForm > label {
+    font-size: 18px;
+  }
+  .alertLabel {
+    font-size: 35px;
+  }
+  .alertButtons {
+    width: 75px;
+    height: 45px;
+    font-size: 23px;
+  }
+}

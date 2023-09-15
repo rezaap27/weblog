@@ -1,0 +1,69 @@
+.searchRes {
+  width: 100%;
+  background-image: url("../../assist/images/search.jpg");
+  background-color: rgba(255, 255, 255, 0.693);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.blur {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(240, 248, 255, 0.379);
+}
+.posts {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 550px) {
+  .posts {
+    width: 100%;
+    justify-content: center;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 850px) {
+  .posts {
+    width: 100%;
+    justify-content: center;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1150px) {
+  .posts {
+    width: 100%;
+    justify-content: center;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1151px) and (max-width: 1350px) {
+  .sidebar {
+    flex: 5;
+  }
+  .posts {
+    flex: 8;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1351px) {
+  .sidebar {
+    flex: 3;
+  }
+  .posts {
+    flex: 9;
+  }
+}

@@ -1,0 +1,17 @@
+.single {
+  display: flex;
+  background: url("../../assist/images/single.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 550px) {
+}
+@media only screen and (min-width: 551px) and (max-width: 850px) {
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1150px) {
+}
+
+@media only screen and (min-width: 1151px) and (max-width: 1350px) {
+}

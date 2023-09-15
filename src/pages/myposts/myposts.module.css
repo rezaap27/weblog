@@ -1,0 +1,35 @@
+.posts {
+  flex: 9;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+@media only screen and (max-width: 550px) {
+  .posts {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 850px) {
+  .posts {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1150px) {
+  .posts {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1151px) and (max-width: 1350px) {
+  .posts {
+    flex: 8;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1351px) {
+}

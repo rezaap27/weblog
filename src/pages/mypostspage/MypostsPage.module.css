@@ -1,0 +1,9 @@
+.posts {
+  display: flex;
+  background-image: url("../../assist/images/mypost.jpg");
+  background-size: cover;
+  width: 100vw;
+  min-height: calc(100vh + 50px);
+  background-attachment: fixed;
+  flex-wrap: wrap;
+}

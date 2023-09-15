@@ -1,0 +1,271 @@
+.sidebar {
+  height: fit-content;
+  margin: 20px;
+  padding-bottom: 30px;
+  background-color: wheat;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px outset rgb(255, 223, 162);
+  flex-wrap: wrap;
+}
+
+.sidebarItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebarTitle {
+  margin: 10px;
+  padding: 5px;
+  width: 80%;
+  text-align: center;
+  font-family: "lara";
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 300;
+  box-shadow: 2px 2px 5px 1px rgb(103, 103, 103);
+  background-color: burlywood;
+  color: rgb(77, 77, 77);
+}
+
+.sidebarItem > img {
+  margin-top: 15px;
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 7px double rgb(131, 131, 131);
+}
+
+.sidebarItem > p {
+  padding: 30px;
+  min-height: 60px;
+  width: 70%;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 23px;
+  line-height: 35px;
+}
+
+.sidebarList {
+  list-style-type: none;
+  margin-bottom: 30px;
+  width: 75%;
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sidebarListItem {
+  display: inline-block;
+  width: 33%;
+  margin-top: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 100;
+  color: rgb(114, 114, 114);
+  border-bottom: 1px solid wheat;
+  transition: 0.4s linear;
+  padding: 4px 0;
+  border-radius: 5px;
+  font-size: 25px;
+}
+.sidebarListItem:hover {
+  background-color: rgb(250, 230, 180);
+  border-bottom: 1px solid rgb(173, 173, 173);
+}
+.sidebarSocial {
+  margin-top: 25px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sidebarSocial > img {
+  width: 60px;
+  height: 60px;
+}
+
+.sidebarIcon {
+  font-size: 16px;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 550px) {
+  .sidebar {
+    width: 100%;
+  }
+  .sidebarItem > p {
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+  .sidebarItem > img {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .sidebarTitle {
+    font-size: 15px;
+    width: 80%;
+    padding: 3px 5px;
+    line-height: 23px;
+  }
+  .sidebarListItem {
+    font-size: 17px;
+    width: 50%;
+    margin-top: 15px;
+  }
+  .sidebarList {
+    margin-bottom: 16px;
+  }
+  .sidebarSocial > img {
+    width: 35px;
+    height: 35px;
+  }
+  .sidebarSocial {
+    width: 65%;
+    padding: 15px 0;
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 850px) {
+  .sidebar {
+    width: 100%;
+  }
+  .sidebarItem > p {
+    font-size: 18px;
+    padding: 15px 45px;
+  }
+  .sidebarItem > img {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .sidebarTitle {
+    font-size: 17px;
+    width: 80%;
+    padding: 3px 5px;
+    line-height: 28px;
+  }
+  .sidebarListItem {
+    font-size: 20px;
+    width: 33%;
+  }
+  .sidebarList {
+    margin-bottom: 16px;
+  }
+  .sidebarSocial > img {
+    width: 40px;
+    height: 40px;
+  }
+  .sidebarSocial {
+    width: 50%;
+    padding: 15px 0;
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1150px) {
+  .sidebar {
+    width: 100%;
+  }
+  .sidebarItem > p {
+    font-size: 18px;
+    padding: 15px 45px;
+  }
+  .sidebarItem > img {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .sidebarTitle {
+    font-size: 18px;
+    width: 80%;
+    padding: 3px 5px;
+    line-height: 30px;
+  }
+  .sidebarListItem {
+    font-size: 20px;
+    width: 25%;
+  }
+  .sidebarList {
+    margin-bottom: 16px;
+  }
+  .sidebarSocial > img {
+    width: 45px;
+    height: 45px;
+  }
+  .sidebarSocial {
+    width: 60%;
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (min-width: 1151px) and (max-width: 1350px) {
+  .sidebar {
+    flex: 5;
+  }
+  .sidebarItem > p {
+    font-size: 18px;
+    padding: 15px 45px;
+  }
+  .sidebarItem > img {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .sidebarTitle {
+    font-size: 16px;
+    width: 80%;
+    padding: 3px 5px;
+    line-height: 23px;
+  }
+  .sidebarListItem {
+    font-size: 19px;
+    width: 50%;
+  }
+  .sidebarList {
+    margin-bottom: 20px;
+  }
+  .sidebarSocial > img {
+    width: 40px;
+    height: 40px;
+  }
+  .sidebarSocial {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1351px) {
+  .sidebar {
+    flex: 3;
+  }
+  .sidebarItem > p {
+    font-size: 18px;
+    padding: 5px 45px;
+    padding-bottom: 20px;
+  }
+  .sidebarItem > img {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .sidebarTitle {
+    font-size: 15px;
+    width: 80%;
+    padding: 3px 5px;
+    line-height: 23px;
+  }
+  .sidebarListItem {
+    font-size: 19px;
+    width: 50%;
+  }
+  .sidebarList {
+    margin-bottom: 16px;
+  }
+  .sidebarSocial > img {
+    width: 35px;
+    height: 35px;
+  }
+  .sidebarSocial {
+    width: 70%;
+  }
+}
